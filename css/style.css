@@ -247,7 +247,7 @@ main {
     width: 100%;
     background-color: var(--sp-primary-dark);
     .banner{
-        /* width: 100%; */
+        
         background-color: var(--sp-banner-bg);
         position: sticky;
         top: 0;
@@ -256,15 +256,37 @@ main {
         text-align: right;
         a.upgrade-btn{
             text-decoration: none;
-            font-size: .6rem;
+            font-size: .8rem;
             font-weight: 600;
             color: var(--sp-primary-light);
-            padding: .4rem 1.5rem;
+            padding: .6rem 2rem;
             border: 1.5px solid var(--sp-primary-light);
             border-radius: 3rem;
             display: inline-block;
             margin-bottom: .5rem;
 
+        }
+    }
+    ul{
+        margin-top: 1rem;
+        justify-content: center;
+        gap: 1rem;
+        color: var(--sp-primary-text);
+        li{
+            list-style: none;
+            font-size: .8rem;
+            font-weight: 500;
+            &:hover{
+                color: var(--sp-primary-light);
+                cursor: default;
+            }
+            &:first-of-type::after{
+                content: " ";
+                display: block;
+                border: 1px solid var(--sp-accent);
+                width: 30%;
+                margin: auto;
+            }
         }
     }
 }
