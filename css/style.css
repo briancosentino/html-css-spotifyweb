@@ -582,6 +582,38 @@ main {
     main #artist p, main #for-you p{
         font-size: .6rem;
     }
+    .bottom{
+        .control-center{
+            .track{
+                padding-right: 0;
+            }
+            .title-track{
+                padding: 0;
+            }
+            .title-track div:first-of-type{
+                font-size: .7rem;
+            }
+            .title-track div.name-track{
+                font-size: .6rem;
+            }
+            .top-player{
+                gap: 1rem;
+            }
+            .controls{
+                font-size: .7rem;
+                padding-left: 0;
+                .soundbar{
+                    width: 4rem;
+                }
+            }
+        }
+    }
+    .top-player{
+        font-size: .7rem;
+        .fa-circle-play{
+            font-size: 1.5rem;
+        }
+    }
 
 
 }
@@ -607,10 +639,32 @@ main {
         }
     }
     .top .sidebar{
+        height: calc(100vh - 6rem);
         .playlist{
             padding-top: .7rem;
             h3{
                 font-size: .7rem;
+            }
+        }
+    }
+    main{
+        height: calc(100vh - 6rem);
+    }
+    .bottom{
+        height: 6rem;
+        .control-center{
+            .track-icons{
+                flex-direction: column;
+                gap: 0;
+            }
+            .top-player{
+                font-size: 1.2rem;
+                .fa-circle-play{
+                    font-size: 2rem;
+                }
+            }
+            .bottom-player{
+                gap: 0.7rem;
             }
         }
     }
@@ -683,6 +737,38 @@ main {
         li{
         width: 20%;}
         
+    }
+    .bottom{
+        .control-center{
+            .track{
+                gap: .4rem;
+                .track-img{
+                    width: 2rem;
+                    height: 2rem;
+                }
+                .track-icons{
+                    font-size: .7rem;
+                }
+            }
+            .title-track div:first-of-type{
+                font-size: .6rem;
+            }
+            .title-track div.name-track{
+                font-size: .5rem;
+            }
+            .top-player{
+                font-size: 1rem;
+                .fa-circle-play{
+                    font-size: 1.5rem;
+                }
+            }
+            .controls{
+                gap: .3rem;
+                .soundbar{
+                    width: 2rem;
+                }
+            }
+        }
     }
 
 
