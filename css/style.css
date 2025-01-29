@@ -151,7 +151,9 @@ body {
         a {
             text-decoration: none;
             color: var(--sp-secondary-text);
-
+            &:hover{
+                color: var(--sp-primary-light);
+            }
         }
 
         .active {
@@ -173,12 +175,20 @@ body {
         h3 {
             font-size: .8rem;
             color: var(--sp-primary-light);
+            &:hover{
+                color: var(--sp-primary-light);
+            }
+            cursor: pointer;
         }
 
         li {
             padding: .5rem 0;
             font-size: .8rem;
             list-style: none;
+            &:hover{
+                color: var(--sp-primary-light);
+            }
+            cursor: pointer;
         }
 
         li.d-flex {
@@ -207,6 +217,9 @@ body {
             gap: .5rem;
             align-items: center;
             margin-bottom: .3rem;
+            &:hover{
+                color: var(--sp-primary-light);
+            }
         }
 
         span {
@@ -273,6 +286,10 @@ main {
             border-radius: 3rem;
             display: inline-block;
             margin-bottom: .5rem;
+            &:hover{
+                font-size: .9rem;
+                transition: .2s;
+            }
 
         }
     }
@@ -311,6 +328,7 @@ main {
             position: relative;
 
             .play-btn {
+                cursor: pointer;
                 opacity: 0;
                 position: absolute;
                 top: 0;
@@ -419,12 +437,29 @@ main {
         }
         .title-track div.name-track{
             color: var(--sp-primary-text);
-            font-size: .8rem;
+            font-size: .7rem;
             font-weight: 600;
+            cursor: pointer;
+            &:hover{
+                color: var(--sp-primary-light);
+                text-decoration: underline;
+            }
         }
         .track-icons{
             color: var(--sp-primary-text);
             gap: .8rem;
+            .fa-folder{
+                cursor: pointer;
+                &:hover{
+                    color: var(--sp-primary-light);
+                }
+            }
+            .fa-heart{
+                cursor: pointer;
+                &:hover{
+                    color: var(--sp-primary-light);
+                }
+            }
         }
 
 
@@ -485,6 +520,11 @@ main {
         }
         .fa-circle-play{
             font-size: 2.3rem;
+            cursor: pointer;
+            &:hover{
+                font-size: 2.4rem;
+
+            }
         }
         .bottom-player{
             justify-content: center;
@@ -532,6 +572,7 @@ main {
                 img{
                     width: 1rem;
                 }
+                
             }
         }
         .playlist{
