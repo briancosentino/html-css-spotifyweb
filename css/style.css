@@ -315,6 +315,7 @@ main {
                 background-color: #00000088;
                 justify-content: center;
                 align-items: center;
+                transition: .3s;
 
                 .fa-circle-play {
                     color: var(--sp-primary-light);
@@ -334,7 +335,7 @@ main {
 
         h2 {
             color: var(--sp-primary-light);
-            margin: 2rem 0;
+            margin: 1rem 0;
             font-size: 1.7rem;
         }
 
@@ -352,6 +353,31 @@ main {
             font-size: .7rem;
             font-weight: 600;
             margin-top: .3rem;
+        }
+    }
+    #for-you{
+        h2{
+            margin-bottom: .5rem;
+        }
+        p{
+            color: var(--sp-primary-text);
+            font-size: .7rem;
+            font-weight: 500;
+        }
+    }
+    #artist{
+        h2{
+            margin-bottom: .5rem;
+        }
+        p{
+            color: var(--sp-primary-text);
+            font-size: .7rem;
+            font-weight: 500;
+        }
+        .card-img{
+            img{
+                border-radius: 100%;
+            }            
         }
     }
 }
