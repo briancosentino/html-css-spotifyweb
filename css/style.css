@@ -110,7 +110,7 @@ body {
 /* end utilities */
 /* top */
 .top .sidebar {
-    height: calc(90vh);
+    height: calc(100vh-9.5rem);
     background-color: var(--sp-sidebar-bg);
     width: 15rem;
     flex-direction: column;
@@ -391,7 +391,7 @@ main {
 .bottom {
     .control-center {
         width: 100vw;
-        height: 10vh;
+        height: 9.5rem;
         background-color: var(--sp-bottom-bg);
     }
 }
