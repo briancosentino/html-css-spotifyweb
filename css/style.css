@@ -115,6 +115,7 @@ body {
     width: 15rem;
     flex-direction: column;
     font-weight: 500;
+    overflow-y: auto;
 
     .small-logo {
         width: 24px;
@@ -165,6 +166,7 @@ body {
     .playlist {
         padding: 1.6rem 1.3rem;
         color: var(--sp-secondary-text);
+        
 
         h3 {
             font-size: .8rem;
@@ -257,6 +259,7 @@ main {
         left: 0;
         padding: 1rem;
         text-align: right;
+        z-index: 10;
 
         a.upgrade-btn {
             text-decoration: none;
@@ -363,6 +366,7 @@ main {
             color: var(--sp-primary-text);
             font-size: .7rem;
             font-weight: 500;
+            
         }
     }
     #artist{
@@ -404,12 +408,100 @@ main {
 
 /* media query */
 /* 768px */
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+    .top .sidebar{
+        .top-sidebar{
+            padding-right: 2rem;
+        }
+        .nav-link{
+            ul li{
+                font-size: .6rem;
+                img{
+                    width: 1rem;
+                }
+            }
+        }
+        .playlist{
+            padding-right: 0;
+            ul li{
+                font-size: .6rem;
+                white-space: nowrap;
+                padding: .3rem 0;
+                img{
+                    width: 1rem;
+                }
+            }
+        }
+        .bottom-sidebar{
+            font-size: .6rem;
+            .profile{
+                font-size: .7rem;
+            }
+        }
+    }
+    main ul{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0 .5rem;
+        gap: 1rem 0;
+        li{
+            width: 17%;
+            display: block;
+            font-size: .7rem;
+        }
+    }
+    .row{
+        margin: 0 -0.5rem;
+    }
+    .col-2{
+        width: calc(100%/12*3);
+        padding: .5rem;
+        .card-title{
+            font-size: .7rem;
+        }
+        .subtitle-card{
+            font-size: .6rem;
+        }
+    }
+    main section h2{
+        font-size: 1.3rem;
+    }
+    main #artist p, main #for-you p{
+        font-size: .6rem;
+    }
+
+
+}
 
 /* end 768px */
 
 /* 576px */
-@media screen and (max-width:576px) {}
+@media screen and (max-width:576px) {
+    .col-2{
+        width: calc(100%/12*6);
+    }
+    main section h2{
+        
+        margin-top: 1.5rem;
+    }
+    
+    main ul {
+        text-align: center;
+        column-gap: 1.1rem;
+        li{
+            width: 30%;
+            font-size: .6rem;
+        }
+    }
+    .top .sidebar{
+        .playlist{
+            padding-top: .7rem;
+            h3{
+                font-size: .7rem;
+            }
+        }
+    }
+}
 
 /* end 576px */
 
@@ -418,6 +510,7 @@ main {
     .top .sidebar {
         width: 2.7rem;
         padding: .5rem 0;
+        
 
         .top-sidebar {
             padding: 0;
@@ -438,7 +531,7 @@ main {
 
         .nav-link ul li {
             padding: .5rem 0;
-
+            
             justify-content: center;
 
         }
@@ -462,6 +555,21 @@ main {
                 justify-content: center;
             }
         }
+    }
+    main .banner{
+        a.upgrade-btn{
+            font-size: .6rem;
+            padding: .4rem 2rem;
+        }
+    }
+    main ul {
+        row-gap: 1rem;
+        column-gap: .8rem;
+        white-space: nowrap;
+        justify-content: center;
+        li{
+        width: 20%;}
+        
     }
 
 
