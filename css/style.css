@@ -117,7 +117,7 @@ body {
     width: 15rem;
     flex-direction: column;
     font-weight: 500;
-    overflow-y: auto;
+    overflow-y: hidden;
 
     .small-logo {
         width: 24px;
@@ -170,6 +170,8 @@ body {
     .playlist {
         padding: 1.6rem 1.3rem;
         color: var(--sp-secondary-text);
+        height: calc(100vh - 400px);
+        overflow-y: auto;
         
 
         h3 {
@@ -267,7 +269,7 @@ main {
     background-color: var(--sp-primary-dark);
 
     .banner {
-
+        max-height: 81px;
         background-color: var(--sp-banner-bg);
         position: sticky;
         top: 0;
@@ -511,6 +513,7 @@ main {
             margin: auto;
         }
         .top-player{
+            max-height: 36.8px;
             color: var(--sp-primary-light);
             font-size: 1.2rem;
             justify-content: center;
